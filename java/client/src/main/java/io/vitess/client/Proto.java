@@ -103,7 +103,7 @@ public class Proto {
    */
   public static int getErrno(@Nullable String errorMessage) {
     if (errorMessage == null) {
-      return 0;
+      return 1;
     }
     int tagPos = errorMessage.indexOf("(errno ");
     if (tagPos == -1) {
